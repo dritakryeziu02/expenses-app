@@ -1,0 +1,158 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "admin",
+      "password": "admin123",
+      "role": "admin"
+    },
+    {
+      "id": 2,
+      "username": "user",
+      "password": "user123",
+      "role": "user"
+    }
+  ],
+
+  "categories": [
+    { "id": 1, "name": "Salary", "type": "income" },
+    { "id": 2, "name": "Gift", "type": "income" },
+    { "id": 3, "name": "Food & Drinks", "type": "expense" },
+    { "id": 4, "name": "Transport", "type": "expense" },
+    { "id": 5, "name": "Bills & Utilities", "type": "expense" },
+    { "id": 6, "name": "Entertainment", "type": "expense" },
+    { "id": 7, "name": "Miscellaneous", "type": "expense" }
+  ],
+
+  "incomes": [
+    {
+      "id": 1,
+      "amount": 50000,
+      "title": "Monthly Salary",
+      "description": "Full-time job",
+      "date": "2025-02-01",
+      "categoryId": 1,
+      "userId": 2
+    },
+    {
+      "id": 2,
+      "amount": 5000,
+      "title": "Gift money",
+      "description": "Birthday gift",
+      "date": "2025-02-10",
+      "categoryId": 2,
+      "userId": 2
+    }
+  ],
+
+  "expenses": [
+    {
+      "id": 1,
+      "amount": 3500,
+      "title": "Apartment Rent",
+      "description": "Monthly payment",
+      "date": "2025-02-28",
+      "categoryId": 5,
+      "userId": 2,
+      "status": "Paid"
+    },
+    {
+      "id": 2,
+      "amount": 884,
+      "title": "Internet Bill",
+      "description": "Monthly subscription",
+      "date": "2025-02-16",
+      "categoryId": 5,
+      "userId": 2,
+      "status": "Auto-Detected"
+    },
+    {
+      "id": 3,
+      "amount": 45000,
+      "title": "Monthly Salary - JAN ‘25",
+      "description": "Salary credited to bank",
+      "date": "2025-02-10",
+      "categoryId": 1,
+      "userId": 2,
+      "status": "Credited"
+    },
+    {
+      "id": 4,
+      "amount": 1200,
+      "title": "Food & Drinks",
+      "description": "Restaurant dinner",
+      "date": "2025-02-12",
+      "categoryId": 3,
+      "userId": 2,
+      "status": "Paid"
+    }
+  ],
+
+  "bills": [
+    {
+      "id": 1,
+      "title": "Electricity Bill",
+      "amount": 3200,
+      "dueDate": "2025-02-18",
+      "categoryId": 5,
+      "userId": 2,
+      "status": "Upcoming"
+    },
+    {
+      "id": 2,
+      "title": "Water Bill",
+      "amount": 1500,
+      "dueDate": "2025-02-20",
+      "categoryId": 5,
+      "userId": 2,
+      "status": "Upcoming"
+    }
+  ],
+
+  "subscriptions": [
+    {
+      "id": 1,
+      "name": "Netflix",
+      "amount": 12.99,
+      "renewDate": "2025-02-25",
+      "categoryId": 6,
+      "userId": 2
+    },
+    {
+      "id": 2,
+      "name": "Spotify",
+      "amount": 9.99,
+      "renewDate": "2025-03-01",
+      "categoryId": 6,
+      "userId": 2
+    }
+  ],
+
+  "notifications": [
+    {
+      "id": 1,
+      "message": "Electricity bill due in 3 days",
+      "date": "2025-02-15",
+      "read": false,
+      "userId": 2
+    },
+    {
+      "id": 2,
+      "message": "New salary credited!",
+      "date": "2025-02-01",
+      "read": true,
+      "userId": 2
+    }
+  ],
+
+  "settings": {
+    "userId": 2,
+    "monthlySavingsGoal": 200000,
+    "currency": "₹",
+    "defaultFilterMonth": "2025-02"
+  },
+
+  "theme": {
+    "mode": "dark"
+  }
+}
